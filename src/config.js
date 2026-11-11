@@ -14,20 +14,20 @@ export const WHATSAPP = {
   // Mensaje que se escribe solo según el botón.
   // En el HTML cada botón dice cuál usa con data-wa="general", data-wa="mantenimiento", etc.
   messages: {
-    general: 'Hola Victor, vi su página y quiero cotizar un servicio para mi clima.',
-    mantenimiento: 'Hola Victor, quiero agendar un mantenimiento para mi clima.',
-    reparacion: 'Hola Victor, mi clima tiene una falla y necesito que lo revisen.',
-    instalacion: 'Hola Victor, quiero cotizar la venta e instalación de un minisplit.',
-    falla: 'Hola Victor, mi clima está fallando. ¿Me pueden ayudar?',
+    general: 'Hola Víctor, vi su página y quiero cotizar un servicio para mi clima.',
+    mantenimiento: 'Hola Víctor, quiero agendar un mantenimiento para mi clima.',
+    reparacion: 'Hola Víctor, mi clima tiene una falla y necesito que lo revisen.',
+    instalacion: 'Hola Víctor, quiero cotizar la venta e instalación de un minisplit.',
+    falla: 'Hola Víctor, mi clima está fallando. ¿Me pueden ayudar?',
   },
 
   // Mensajes que se arman con lo que elige el cliente (fallas y calculadora).
   templates: {
-    fallas: (lista) => `Hola Victor, mi clima ${lista}. ¿Me pueden ayudar a revisarlo?`,
+    fallas: (lista) => `Hola Víctor, mi clima ${lista}. ¿Me pueden ayudar a revisarlo?`,
     minisplit: (toneladas, espacio) =>
-      `Hola Victor, quiero cotizar un minisplit de ${toneladas} ${toneladas === 1 ? 'tonelada' : 'toneladas'} para ${espacio}.`,
+      `Hola Víctor, quiero cotizar un minisplit de ${toneladas} ${toneladas === 1 ? 'tonelada' : 'toneladas'} para ${espacio}.`,
     espacioGrande: (espacio) =>
-      `Hola Victor, necesito aire acondicionado para ${espacio}. ¿Me ayudan a ver qué equipo conviene?`,
+      `Hola Víctor, necesito aire acondicionado para ${espacio}. ¿Me ayudan a ver qué equipo conviene?`,
   },
 };
 
@@ -45,7 +45,7 @@ export const TRACKING = {
 
 /**
  * CALCULADORA DE TONELADAS
- * Referencia para clima muy caluroso (Nuevo León). Victor puede ajustarla.
+ * Referencia para clima muy caluroso (Nuevo León). Víctor puede ajustarla.
  * "max" = metros cuadrados máximos para esa capacidad.
  */
 export const CALCULADORA = {

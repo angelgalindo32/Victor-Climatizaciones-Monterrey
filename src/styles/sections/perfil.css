@@ -27,8 +27,9 @@
   display: grid;
   grid-template-columns: var(--avatar) minmax(0, 1fr);
   grid-template-areas:
-    'avatar id'
-    'lead lead'
+    'avatar title'
+    'info   info'
+    'lead   lead'
     'actions actions';
   column-gap: 14px;
 }
@@ -48,24 +49,26 @@
   object-fit: cover;
 }
 
-.profile__id {
-  grid-area: id;
-  min-width: 0;
-  padding-top: 12px;
-}
-
 .profile__title {
-  font-size: clamp(1.3rem, 0.95rem + 1.8vw, 2.25rem);
-  line-height: 1.12;
+  grid-area: title;
+  align-self: center;
+  min-width: 0;
+  padding-top: 6px;
+  font-size: clamp(1.25rem, 0.95rem + 1.5vw, 2.25rem);
+  line-height: 1.15;
   letter-spacing: -0.02em;
 }
 
+.profile__info {
+  grid-area: info;
+  margin-top: 10px;
+}
+
 .profile__subtitle {
-  margin-top: 6px;
   color: var(--ink-2);
-  font-size: clamp(0.92rem, 0.88rem + 0.25vw, 1.05rem);
+  font-size: clamp(0.95rem, 0.9rem + 0.3vw, 1.12rem);
   font-weight: 500;
-  line-height: 1.35;
+  line-height: 1.38;
 }
 
 /* Línea pequeña bajo el nombre, como la categoría en Facebook */
@@ -73,7 +76,7 @@
   display: flex;
   align-items: flex-start;
   gap: 6px;
-  margin-top: 8px;
+  margin-top: 6px;
   color: var(--ink-2);
   font-size: 0.9rem;
   font-weight: 600;
@@ -89,7 +92,7 @@
 
 .profile__lead {
   grid-area: lead;
-  margin-top: 20px;
+  margin-top: 14px;
   color: var(--ink-2);
   font-size: clamp(1.02rem, 1rem + 0.3vw, 1.18rem);
 }
@@ -98,7 +101,7 @@
   display: grid;
   grid-area: actions;
   gap: 10px;
-  margin-top: 18px;
+  margin-top: 16px;
 }
 
 @media (min-width: 520px) {
@@ -121,8 +124,10 @@
 
   .profile__body {
     --avatar: 168px;
+    grid-template-columns: var(--avatar) minmax(0, 1fr);
     grid-template-areas:
-      'avatar id'
+      'avatar title'
+      'avatar info'
       'avatar lead'
       'avatar actions';
     column-gap: 28px;
@@ -130,12 +135,17 @@
   }
 
   .profile__avatar {
-    grid-row: 1 / span 3;
+    grid-row: 1 / span 4;
     border-width: 5px;
   }
 
-  .profile__id {
+  .profile__title {
+    align-self: start;
     padding-top: 18px;
+  }
+
+  .profile__info {
+    margin-top: 6px;
   }
 
   .profile__lead {

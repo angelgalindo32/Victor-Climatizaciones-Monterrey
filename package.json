@@ -2,7 +2,7 @@
   "name": "climatizacion-monterrey-web",
   "version": "1.0.0",
   "private": true,
-  "description": "Landing page de Climatización Monterrey (Victor): mantenimiento, reparación e instalación de minisplits.",
+  "description": "Landing page de Climatización Monterrey (Víctor): mantenimiento, reparación e instalación de minisplits.",
   "type": "module",
   "scripts": {
     "dev": "vite",

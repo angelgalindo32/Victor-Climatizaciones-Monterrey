@@ -45,7 +45,7 @@ export function initCalculadora() {
       btu.textContent = `más de ${formatNumber(maxTons * CALCULADORA.btuPorTonelada)} BTU`;
       if (note) {
         note.textContent =
-          'Para un espacio así conviene revisar en sitio: puede necesitar más de un equipo. Victor te dice qué conviene.';
+          'Para un espacio así conviene revisar en sitio: puede necesitar más de un equipo. Víctor te dice qué conviene.';
       }
       ctaText.textContent = 'Pedir revisión del espacio';
       message = WHATSAPP.templates.espacioGrande(espacio);

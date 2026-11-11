@@ -2,7 +2,7 @@
 
 ## Idea
 
-Página de negocio local, no de startup. Lo que genera confianza es ver **trabajos reales**, ver **quién es Victor** y poder escribir por **WhatsApp** en un toque. El verde de WhatsApp es la única acción que destaca.
+Página de negocio local, no de startup. Lo que genera confianza es ver **trabajos reales**, ver **quién es Víctor** y poder escribir por **WhatsApp** en un toque. El verde de WhatsApp es la única acción que destaca.
 
 El inicio imita una página de Facebook (lo pidió el cliente): portada, foto de perfil montada a la izquierda, título a la derecha y los botones abajo. Estilos en `src/styles/sections/perfil.css`.
 

@@ -1,6 +1,6 @@
 # Climatización Monterrey · Página web
 
-Landing page de **Victor / Climatización Monterrey**: mantenimiento, reparación, instalación y venta de minisplits en Monterrey y área metropolitana. El objetivo de la página es uno solo: que el cliente escriba por **WhatsApp (81 1918 6070)**.
+Landing page de **Víctor / Climatización Monterrey**: mantenimiento, reparación, instalación y venta de minisplits en Monterrey y área metropolitana. El objetivo de la página es uno solo: que el cliente escriba por **WhatsApp (81 1918 6070)**.
 
 Hecha con HTML, CSS y JavaScript sin frameworks. [Vite](https://vite.dev) se usa para desarrollar con recarga en vivo y para generar la versión optimizada que se sube al hosting.
 
@@ -54,7 +54,7 @@ climatizacion-monterrey-web/
 │       ├── img/trabajos/      Galería (4:5, vertical)
 │       └── video/             Video de la galería + su imagen de portada
 └── docs/
-    ├── PENDIENTES.md          Lo que falta confirmar con Victor
+    ├── PENDIENTES.md          Lo que falta confirmar con Víctor
     ├── MEDICION.md            Cómo activar Google Analytics, Ads y Pixel
     └── DISENO.md              Colores, tipografía, fotos y reglas de diseño
 ```
