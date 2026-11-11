@@ -27,7 +27,7 @@ Todos los textos pasan contraste WCAG AA.
 
 | Lugar      | Proporción | Tamaño       | Carpeta                    |
 | ---------- | ---------- | ------------ | -------------------------- |
-| Portada    | 4:3 (se recorta a 16:10 en celular y 21:8 en compu) | 1280 × 963 | `src/assets/img/perfil/portada.jpg` |
+| Portada    | 21:8 panorámica (recortada)         | 1280 × 500 | `src/assets/img/perfil/portada.jpg` |
 | Foto de perfil | 1:1 (se muestra en círculo) | 336 × 336 mínimo | `src/assets/img/perfil/foto-perfil.jpg` |
 | Servicios  | 4:3        | 960 × 720    | `src/assets/img/servicios/`|
 | Galería    | 4:5        | 720 × 900    | `src/assets/img/trabajos/` |
