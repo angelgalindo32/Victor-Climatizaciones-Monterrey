@@ -53,22 +53,22 @@
   grid-area: title;
   align-self: center;
   min-width: 0;
-  padding-top: 6px;
+  padding-top: 8px;
   font-size: clamp(1.25rem, 0.95rem + 1.5vw, 2.25rem);
-  line-height: 1.15;
+  line-height: 1.18;
   letter-spacing: -0.02em;
 }
 
 .profile__info {
   grid-area: info;
-  margin-top: 10px;
+  margin-top: 18px;
 }
 
 .profile__subtitle {
   color: var(--ink-2);
   font-size: clamp(0.95rem, 0.9rem + 0.3vw, 1.12rem);
   font-weight: 500;
-  line-height: 1.38;
+  line-height: 1.45;
 }
 
 /* Línea pequeña bajo el nombre, como la categoría en Facebook */
@@ -76,11 +76,11 @@
   display: flex;
   align-items: flex-start;
   gap: 6px;
-  margin-top: 6px;
+  margin-top: 12px;
   color: var(--ink-2);
   font-size: 0.9rem;
   font-weight: 600;
-  line-height: 1.4;
+  line-height: 1.45;
 }
 
 .profile__meta .icon {
@@ -92,7 +92,7 @@
 
 .profile__lead {
   grid-area: lead;
-  margin-top: 14px;
+  margin-top: 16px;
   color: var(--ink-2);
   font-size: clamp(1.02rem, 1rem + 0.3vw, 1.18rem);
 }
@@ -145,10 +145,10 @@
   }
 
   .profile__info {
-    margin-top: 6px;
+    margin-top: 10px;
   }
 
   .profile__lead {
-    margin-top: 12px;
+    margin-top: 14px;
   }
 }
