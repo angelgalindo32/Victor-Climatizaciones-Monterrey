@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# PENDIENTE (dominio): descomenta cuando tengas la URL definitiva
+# Sitemap: https://www.TU-DOMINIO.com/sitemap.xml

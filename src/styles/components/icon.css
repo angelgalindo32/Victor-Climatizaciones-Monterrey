@@ -1,0 +1,19 @@
+/* Íconos del sprite (ver <svg> al inicio del body en index.html) */
+.icon {
+  flex: none;
+  width: 20px;
+  height: 20px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+/* Logo de WhatsApp: relleno sólido */
+.icon--wa {
+  width: 22px;
+  height: 22px;
+  fill: currentColor;
+  stroke: none;
+}

@@ -1,0 +1,38 @@
+/* Burbuja fija de WhatsApp (abajo a la derecha, siempre visible) */
+.wa-float {
+  position: fixed;
+  right: calc(16px + env(safe-area-inset-right, 0px));
+  bottom: calc(16px + env(safe-area-inset-bottom, 0px));
+  z-index: 20;
+  display: grid;
+  place-items: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: var(--wa);
+  color: var(--white);
+  box-shadow: var(--shadow-float);
+  text-decoration: none;
+  transition:
+    transform 0.2s ease-out,
+    background-color 0.2s ease-out;
+}
+
+.wa-float:hover {
+  background: var(--wa-hover);
+  transform: scale(1.05);
+}
+
+.wa-float .icon--wa {
+  width: 32px;
+  height: 32px;
+}
+
+@media (min-width: 768px) {
+  .wa-float {
+    right: calc(24px + env(safe-area-inset-right, 0px));
+    bottom: calc(24px + env(safe-area-inset-bottom, 0px));
+    width: 64px;
+    height: 64px;
+  }
+}

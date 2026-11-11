@@ -1,0 +1,17 @@
+/* "Saltar al contenido": invisible hasta que se navega con teclado */
+.skip-link {
+  position: absolute;
+  top: -60px;
+  left: 16px;
+  z-index: 30;
+  padding: 10px 16px;
+  border-radius: 8px;
+  background: var(--ink);
+  color: var(--white);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.skip-link:focus {
+  top: calc(12px + env(safe-area-inset-top, 0px));
+}

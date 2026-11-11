@@ -1,0 +1,62 @@
+.site-footer {
+  background: var(--white);
+  border-top: 1px solid var(--line);
+}
+
+/* Abajo deja espacio para que el botón flotante de WhatsApp no tape el texto en celular */
+.site-footer__inner {
+  display: grid;
+  gap: 18px;
+  padding-block: 36px calc(96px + env(safe-area-inset-bottom, 0px));
+}
+
+.site-footer__text {
+  max-width: 52ch;
+  margin-top: 12px;
+  color: var(--ink-2);
+  font-size: 0.95rem;
+}
+
+.site-footer__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.site-footer__links a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 0 16px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: border-color 0.2s ease-out;
+}
+
+.site-footer__links a:hover {
+  border-color: var(--ink);
+}
+
+.site-footer__legal {
+  color: var(--ink-2);
+  font-size: 0.85rem;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+@media (min-width: 900px) {
+  .site-footer__inner {
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    padding-bottom: 36px;
+  }
+
+  .site-footer__legal {
+    grid-column: 1 / -1;
+  }
+}

@@ -1,0 +1,14 @@
+/* Ancho máximo y márgenes laterales (respeta la muesca del iPhone en horizontal) */
+.container {
+  max-width: var(--container);
+  margin-inline: auto;
+  padding-left: max(var(--gutter), env(safe-area-inset-left, 0px));
+  padding-right: max(var(--gutter), env(safe-area-inset-right, 0px));
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding-left: max(var(--gutter-md), env(safe-area-inset-left, 0px));
+    padding-right: max(var(--gutter-md), env(safe-area-inset-right, 0px));
+  }
+}

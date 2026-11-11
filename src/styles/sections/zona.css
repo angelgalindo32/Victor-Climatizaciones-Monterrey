@@ -1,0 +1,30 @@
+/* Zona de servicio (la columna de preguntas usa components/accordion.css) */
+.zone__text {
+  max-width: 44ch;
+  margin-top: 12px;
+  color: var(--ink-2);
+}
+
+.zone__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px 16px;
+  margin-top: 20px;
+  font-weight: 600;
+}
+
+.zone__list li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.zone__list .icon {
+  width: 18px;
+  height: 18px;
+  color: var(--brand);
+}
+
+.faq__title {
+  margin-bottom: 20px;
+}

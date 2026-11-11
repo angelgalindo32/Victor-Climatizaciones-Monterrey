@@ -1,0 +1,35 @@
+/*
+ * Hoja principal: solo importa, en orden de capas.
+ *   base/       tokens (colores, fuentes, medidas), reset y tipografía
+ *   layout/     contenedor, secciones, header y footer
+ *   components/ piezas reutilizables (botones, tarjetas, chips, etc.)
+ *   sections/   lo propio de cada sección de la página
+ * Vite junta todo en un solo archivo al hacer el build.
+ */
+
+@import './base/tokens.css';
+@import './base/reset.css';
+@import './base/typography.css';
+
+@import './layout/container.css';
+@import './layout/section.css';
+@import './layout/header.css';
+@import './layout/footer.css';
+
+@import './components/icon.css';
+@import './components/skip-link.css';
+@import './components/brand.css';
+@import './components/button.css';
+@import './components/check-list.css';
+@import './components/card.css';
+@import './components/chip.css';
+@import './components/message-preview.css';
+@import './components/accordion.css';
+@import './components/whatsapp-float.css';
+
+@import './sections/perfil.css';
+@import './sections/servicios.css';
+@import './sections/trabajos.css';
+@import './sections/fallas.css';
+@import './sections/zona.css';
+@import './sections/cta-final.css';

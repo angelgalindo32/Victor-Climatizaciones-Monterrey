@@ -1,0 +1,81 @@
+/* Banda azul de cierre */
+.cta-final {
+  background: var(--brand);
+  color: var(--white);
+}
+
+.cta-final__inner {
+  display: grid;
+  gap: 18px;
+  padding-block: clamp(48px, 7vw, 88px);
+}
+
+.cta-final__title {
+  max-width: 18ch;
+  color: var(--white);
+  font-size: clamp(1.9rem, 1.3rem + 2.6vw, 3rem);
+}
+
+.cta-final__text {
+  max-width: 46ch;
+  color: var(--brand-on-dark);
+  font-size: clamp(1.02rem, 0.98rem + 0.3vw, 1.18rem);
+}
+
+.cta-final__action {
+  justify-self: start;
+}
+
+/* Número + botón copiar */
+.cta-final__phone {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px 14px;
+  margin-top: 6px;
+  padding-top: 18px;
+  border-top: 1px solid rgba(255, 255, 255, 0.22);
+}
+
+.cta-final__phone-label {
+  color: var(--brand-on-dark);
+}
+
+.cta-final__phone-number {
+  color: var(--white);
+  font-size: 1.25rem;
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+  user-select: all;
+}
+
+.cta-final__copy {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 44px;
+  padding: 0 14px;
+  border: 1.5px solid rgba(255, 255, 255, 0.4);
+  border-radius: var(--radius-sm);
+  background: transparent;
+  color: var(--white);
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.cta-final__copy:hover {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.cta-final__copy .icon {
+  width: 18px;
+  height: 18px;
+}
+
+@media (max-width: 519px) {
+  .cta-final__action {
+    width: 100%;
+  }
+}

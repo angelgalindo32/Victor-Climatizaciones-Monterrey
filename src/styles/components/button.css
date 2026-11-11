@@ -1,0 +1,54 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-height: 54px;
+  padding: 0 24px;
+  border: 0;
+  border-radius: 12px;
+  font-size: 1.02rem;
+  font-weight: 700;
+  line-height: 1.2;
+  text-decoration: none;
+  cursor: pointer;
+  transition:
+    background-color 0.2s ease-out,
+    border-color 0.2s ease-out,
+    transform 0.15s ease-out;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+/* Verde de WhatsApp: la acción principal */
+.btn--wa {
+  background: var(--wa);
+  color: var(--wa-ink);
+}
+
+.btn--wa:hover {
+  background: var(--wa-hover);
+}
+
+/* Contorno: acción secundaria */
+.btn--line {
+  border: 1.5px solid var(--line);
+  background: var(--white);
+  color: var(--ink);
+}
+
+.btn--line:hover {
+  border-color: var(--ink);
+}
+
+.btn--line .icon--wa {
+  color: var(--wa-icon);
+}
+
+/* Ancho completo */
+.btn--block {
+  width: 100%;
+}

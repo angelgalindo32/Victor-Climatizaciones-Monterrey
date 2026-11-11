@@ -1,0 +1,430 @@
+<!doctype html>
+<html lang="es-MX">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+
+    <title>Aire acondicionado en Monterrey | Mantenimiento, reparación e instalación</title>
+    <meta
+      name="description"
+      content="Mantenimiento, reparación, instalación y venta de aires acondicionados y minisplits en Monterrey y área metropolitana. Cotiza por WhatsApp: 81 1918 6070."
+    />
+    <meta name="theme-color" content="#0b5cad" />
+    <meta name="color-scheme" content="light" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+
+    <!-- PENDIENTE (dominio): descomenta cuando tengas la URL definitiva -->
+    <!-- <link rel="canonical" href="https://www.TU-DOMINIO.com/" /> -->
+
+    <!-- Vista previa al compartir el link en WhatsApp / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="es_MX" />
+    <meta property="og:site_name" content="Climatización Monterrey" />
+    <meta property="og:title" content="Climatización Monterrey · Aire acondicionado y minisplits" />
+    <meta
+      property="og:description"
+      content="Mantenimiento, reparación e instalación de minisplits en Monterrey. Cotiza por WhatsApp."
+    />
+    <!-- PENDIENTE (dominio): og:image necesita la URL completa. La imagen ya está en public/og-image.jpg -->
+    <!-- <meta property="og:image" content="https://www.TU-DOMINIO.com/og-image.jpg" /> -->
+
+    <!-- Google Search Console: si pide verificación por etiqueta HTML, pégala aquí -->
+
+    <!--
+      Google Analytics, Google Ads y Pixel de Meta NO se pegan aquí:
+      se activan poniendo los IDs en src/config.js (TRACKING). Ver docs/MEDICION.md
+    -->
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "HVACBusiness",
+        "name": "Climatización Monterrey",
+        "description": "Mantenimiento, reparación, instalación y venta de aires acondicionados y minisplits en Monterrey y su área metropolitana.",
+        "telephone": "+52 81 1918 6070",
+        "areaServed": { "@type": "City", "name": "Monterrey, Nuevo León" },
+        "sameAs": [
+          "https://www.instagram.com/climat_monterrey/",
+          "https://www.facebook.com/profile.php?id=61592615528010"
+        ],
+        "makesOffer": [
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Mantenimiento de aire acondicionado" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Reparación de aire acondicionado" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Instalación de minisplit" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Venta de minisplits" } }
+        ]
+      }
+    </script>
+  </head>
+
+  <body>
+    <!-- Sprite de íconos: se usan con <svg class="icon"><use href="#i-nombre" /></svg> -->
+    <svg width="0" height="0" style="position: absolute" aria-hidden="true" focusable="false">
+      <symbol id="i-whatsapp" viewBox="0 0 24 24">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
+      </symbol>
+      <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.2 4.2L19 7" /></symbol>
+      <symbol id="i-pin" viewBox="0 0 24 24">
+        <path d="M12 21s-6.5-5.6-6.5-11a6.5 6.5 0 0 1 13 0c0 5.4-6.5 11-6.5 11z" />
+        <circle cx="12" cy="10" r="2.3" />
+      </symbol>
+      <symbol id="i-chevron" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6" /></symbol>
+      <symbol id="i-copy" viewBox="0 0 24 24">
+        <rect x="8.5" y="8.5" width="11" height="11" rx="2.5" />
+        <path d="M15.5 8.5v-2a2 2 0 0 0-2-2h-7a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h2" />
+      </symbol>
+      <!-- Ícono provisional del logo (ondas de aire) -->
+      <symbol id="i-brand" viewBox="0 0 24 24">
+        <path d="M4 8c2.2-1.6 3.8-1.6 6 0s3.8 1.6 6 0c1-.7 2.1-1 4-1" />
+        <path d="M4 12.5c2.2-1.6 3.8-1.6 6 0s3.8 1.6 6 0c1-.7 2.1-1 4-1" />
+        <path d="M4 17c2.2-1.6 3.8-1.6 6 0s3.8 1.6 6 0c1-.7 2.1-1 4-1" />
+      </symbol>
+    </svg>
+
+    <a class="skip-link" href="#servicios">Saltar al contenido</a>
+
+    <!-- ============================== HEADER ============================== -->
+    <header class="site-header">
+      <div class="container site-header__inner">
+        <a class="brand" href="#inicio" aria-label="Victor - Climatización Monterrey, inicio">
+          <span class="brand__mark" aria-hidden="true"><svg><use href="#i-brand" /></svg></span>
+          <span class="brand__name">Victor<span class="brand__sub">Climatización Monterrey</span></span>
+        </a>
+
+        <nav class="site-nav" aria-label="Principal">
+          <a href="#servicios">Servicios</a>
+          <a href="#trabajos">Trabajos</a>
+          <a href="#fallas">Fallas</a>
+          <a href="#preguntas">Preguntas</a>
+        </nav>
+
+        <a class="header-wa" href="https://wa.me/528119186070" target="_blank" rel="noopener" data-wa="general" data-track="header">
+          <svg class="icon icon--wa" aria-hidden="true"><use href="#i-whatsapp" /></svg>
+          <span class="header-wa__label">WhatsApp</span>
+          <span class="header-wa__number" data-phone>81 1918 6070</span>
+        </a>
+      </div>
+    </header>
+
+    <main id="inicio">
+      <!-- ============================== PERFIL (estilo página de Facebook) ============================== -->
+      <section class="profile" aria-labelledby="hero-title">
+        <div class="profile__cover">
+          <img
+            src="./src/assets/img/perfil/portada.jpg"
+            width="1280"
+            height="963"
+            alt="Técnico dando mantenimiento a un minisplit en una oficina, con cubierta protectora azul"
+            fetchpriority="high"
+          />
+        </div>
+
+        <div class="container profile__body">
+          <!-- Cuando esté el logo nuevo (sello con su foto) puede ir aquí -->
+          <img
+            class="profile__avatar"
+            src="./src/assets/img/perfil/foto-perfil.jpg"
+            width="336"
+            height="336"
+            alt="Victor, de Climatización Monterrey"
+          />
+
+          <div class="profile__id">
+            <h1 class="profile__title" id="hero-title">Victor / Mantenimiento, reparación e instalación de minisplits en Monterrey</h1>
+            <p class="profile__meta">
+              <svg class="icon" aria-hidden="true"><use href="#i-pin" /></svg>
+              En Monterrey y área metropolitana
+            </p>
+          </div>
+
+          <p class="profile__lead">Dejamos enfriando tu clima como se debe. Cotiza por WhatsApp.</p>
+
+          <div class="profile__actions">
+            <a class="btn btn--wa" href="https://wa.me/528119186070" target="_blank" rel="noopener" data-wa="general" data-track="hero">
+              <svg class="icon icon--wa" aria-hidden="true"><use href="#i-whatsapp" /></svg>
+              Cotizar por WhatsApp
+            </a>
+            <a class="btn btn--line" href="#servicios">Ver servicios</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================== SERVICIOS ============================== -->
+      <section class="section section--alt" id="servicios" aria-labelledby="servicios-title">
+        <div class="container">
+          <div class="section-head">
+            <h2 class="h2" id="servicios-title">Servicios</h2>
+            <p class="section-head__text">Elige lo que necesitas. El botón abre WhatsApp con tu mensaje ya escrito.</p>
+          </div>
+
+          <div class="services">
+            <article class="card">
+              <img
+                class="card__img"
+                src="./src/assets/img/servicios/mantenimiento.jpg"
+                width="960"
+                height="720"
+                loading="lazy"
+                alt="Lavado a presión del serpentín de un minisplit con cubierta protectora"
+              />
+              <div class="card__body">
+                <h3 class="card__title">Mantenimiento</h3>
+                <p class="card__text">Lavado completo para que gaste menos luz y no huela a humedad.</p>
+                <!-- CONFIRMAR CON VICTOR qué incluye -->
+                <ul class="check-list">
+                  <li><svg class="icon" aria-hidden="true"><use href="#i-check" /></svg>Lavado de filtros y serpentines</li>
+                  <li><svg class="icon" aria-hidden="true"><use href="#i-check" /></svg>Limpieza de turbina y charola</li>
+                  <li><svg class="icon" aria-hidden="true"><use href="#i-check" /></svg>Destape del drenaje para que no gotee</li>
+                  <li><svg class="icon" aria-hidden="true"><use href="#i-check" /></svg>Revisión de gas y conexiones</li>
+                </ul>
+                <a class="btn btn--wa btn--block card__action" href="https://wa.me/528119186070" target="_blank" rel="noopener" data-wa="mantenimiento" data-track="servicio_mantenimiento">
+                  <svg class="icon icon--wa" aria-hidden="true"><use href="#i-whatsapp" /></svg>
+                  Agendar mantenimiento
+                </a>
+              </div>
+            </article>
+
+            <article class="card">
+              <img
+                class="card__img"
+                src="./src/assets/img/servicios/reparacion.jpg"
+                width="960"
+                height="720"
+                loading="lazy"
+                alt="Medición con amperímetro de gancho junto a un capacitor de aire acondicionado"
+              />
+              <div class="card__body">
+                <h3 class="card__title">Reparación</h3>
+                <p class="card__text">¿No enfría, gotea o hace ruido? Encontramos la falla y la reparamos.</p>
+                <ul class="check-list">
+                  <li><svg class="icon" aria-hidden="true"><use href="#i-check" /></svg>Diagnóstico en tu domicilio</li>
+                  <li><svg class="icon" aria-hidden="true"><use href="#i-check" /></svg>Fugas y carga de gas</li>
+                  <li><svg class="icon" aria-hidden="true"><use href="#i-check" /></svg>Capacitores y fallas eléctricas</li>
+                </ul>
+                <a class="btn btn--line btn--block card__action" href="https://wa.me/528119186070" target="_blank" rel="noopener" data-wa="reparacion" data-track="servicio_reparacion">
+                  <svg class="icon icon--wa" aria-hidden="true"><use href="#i-whatsapp" /></svg>
+                  Reportar una falla
+                </a>
+              </div>
+            </article>
+
+            <article class="card">
+              <img
+                class="card__img"
+                src="./src/assets/img/servicios/instalacion.jpg"
+                width="960"
+                height="720"
+                loading="lazy"
+                alt="Unidad exterior de minisplit con bomba de vacío y manómetros conectados durante la instalación"
+              />
+              <div class="card__body">
+                <h3 class="card__title">Instalación y venta</h3>
+                <p class="card__text">Te ayudamos a elegir el equipo con la capacidad correcta y te lo instalamos.</p>
+                <ul class="check-list">
+                  <li><svg class="icon" aria-hidden="true"><use href="#i-check" /></svg>Venta de minisplits</li>
+                  <li><svg class="icon" aria-hidden="true"><use href="#i-check" /></svg>Instalación nueva o cambio de equipo</li>
+                  <li><svg class="icon" aria-hidden="true"><use href="#i-check" /></svg>Cálculo de toneladas para tu espacio</li>
+                </ul>
+                <a class="btn btn--line btn--block card__action" href="https://wa.me/528119186070" target="_blank" rel="noopener" data-wa="instalacion" data-track="servicio_instalacion">
+                  <svg class="icon icon--wa" aria-hidden="true"><use href="#i-whatsapp" /></svg>
+                  Cotizar instalación
+                </a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================== TRABAJOS ============================== -->
+      <section class="section" id="trabajos" aria-labelledby="trabajos-title">
+        <div class="container">
+          <div class="section-head">
+            <h2 class="h2" id="trabajos-title">Trabajos recientes</h2>
+            <p class="section-head__text">
+              Fotos de servicios reales. Lavamos con cubierta protectora para no mojar tu pared ni tus muebles.
+            </p>
+          </div>
+
+          <div class="gallery">
+            <figure class="gallery__item">
+              <video
+                class="gallery__media"
+                src="./src/assets/video/lavado-serpentin.mp4"
+                poster="./src/assets/video/lavado-serpentin-poster.jpg"
+                width="432"
+                height="540"
+                muted
+                loop
+                playsinline
+                preload="metadata"
+                data-autoplay-visible
+                aria-label="Video: lavado a presión de un serpentín"
+              ></video>
+              <figcaption class="gallery__caption">Lavado de serpentín a presión</figcaption>
+            </figure>
+            <figure class="gallery__item">
+              <img class="gallery__media" src="./src/assets/img/trabajos/serpentin-sucio.jpg" width="720" height="900" loading="lazy" alt="Serpentín de minisplit con suciedad negra acumulada" />
+              <figcaption class="gallery__caption">Serpentín con suciedad acumulada</figcaption>
+            </figure>
+            <figure class="gallery__item">
+              <img class="gallery__media" src="./src/assets/img/trabajos/filtro-sucio.jpg" width="720" height="900" loading="lazy" alt="Filtro de minisplit tapado de polvo" />
+              <figcaption class="gallery__caption">Filtro tapado de polvo</figcaption>
+            </figure>
+            <figure class="gallery__item">
+              <img class="gallery__media" src="./src/assets/img/trabajos/temperatura-salida.jpg" width="720" height="900" loading="lazy" alt="Termómetro infrarrojo marcando 10 grados en la salida de aire de un minisplit" />
+              <figcaption class="gallery__caption">Medición de temperatura en la salida del aire</figcaption>
+            </figure>
+            <figure class="gallery__item">
+              <img class="gallery__media" src="./src/assets/img/trabajos/manometros.jpg" width="720" height="900" loading="lazy" alt="Manómetros de gas refrigerante conectados" />
+              <figcaption class="gallery__caption">Revisión de presiones del gas</figcaption>
+            </figure>
+            <figure class="gallery__item">
+              <img class="gallery__media" src="./src/assets/img/trabajos/revision-interior.jpg" width="720" height="900" loading="lazy" alt="Técnico revisando un minisplit abierto" />
+              <figcaption class="gallery__caption">Revisión del equipo por dentro</figcaption>
+            </figure>
+            <figure class="gallery__item">
+              <img class="gallery__media" src="./src/assets/img/trabajos/mantenimiento-oficina.jpg" width="720" height="900" loading="lazy" alt="Técnico en escalera dando mantenimiento a un minisplit en oficina" />
+              <figcaption class="gallery__caption">Mantenimiento en oficina</figcaption>
+            </figure>
+            <figure class="gallery__item">
+              <img class="gallery__media" src="./src/assets/img/trabajos/unidad-exterior.jpg" width="720" height="900" loading="lazy" alt="Unidad exterior abierta con manómetros conectados" />
+              <figcaption class="gallery__caption">Reparación de unidad exterior</figcaption>
+            </figure>
+          </div>
+          <p class="gallery__hint">Desliza para ver más →</p>
+        </div>
+      </section>
+
+      <!-- ============================== FALLAS ============================== -->
+      <section class="section section--alt" id="fallas" aria-labelledby="fallas-title">
+        <div class="container split">
+          <div>
+            <div class="section-head section-head--tight">
+              <h2 class="h2" id="fallas-title">¿Qué le pasa a tu clima?</h2>
+            </div>
+
+            <!-- data-falla = texto que se agrega al mensaje -->
+            <div class="chip-group" role="group" aria-label="Fallas del clima">
+              <button type="button" class="chip" aria-pressed="false" data-falla="no enfría"><svg class="icon" aria-hidden="true"><use href="#i-check" /></svg>No enfría</button>
+              <button type="button" class="chip" aria-pressed="false" data-falla="gotea agua"><svg class="icon" aria-hidden="true"><use href="#i-check" /></svg>Gotea agua</button>
+              <button type="button" class="chip" aria-pressed="false" data-falla="hace ruido"><svg class="icon" aria-hidden="true"><use href="#i-check" /></svg>Hace ruido</button>
+              <button type="button" class="chip" aria-pressed="false" data-falla="huele a humedad"><svg class="icon" aria-hidden="true"><use href="#i-check" /></svg>Huele a humedad</button>
+              <button type="button" class="chip" aria-pressed="false" data-falla="no prende"><svg class="icon" aria-hidden="true"><use href="#i-check" /></svg>No prende</button>
+              <button type="button" class="chip" aria-pressed="false" data-falla="se apaga solo"><svg class="icon" aria-hidden="true"><use href="#i-check" /></svg>Se apaga solo</button>
+              <button type="button" class="chip" aria-pressed="false" data-falla="se congela"><svg class="icon" aria-hidden="true"><use href="#i-check" /></svg>Se congela</button>
+              <button type="button" class="chip" aria-pressed="false" data-falla="gasta mucha luz"><svg class="icon" aria-hidden="true"><use href="#i-check" /></svg>Gasta mucha luz</button>
+            </div>
+            <p class="fallas__status" id="fallas-status" aria-live="polite">Puedes elegir varias.</p>
+          </div>
+
+          <div class="msg-preview">
+            <p class="msg-preview__label">Tu mensaje:</p>
+            <p class="msg-preview__bubble" id="fallas-message">Hola Victor, mi clima está fallando. ¿Me pueden ayudar?</p>
+            <a class="btn btn--wa btn--block" id="fallas-cta" href="https://wa.me/528119186070" target="_blank" rel="noopener" data-wa="falla" data-track="fallas">
+              <svg class="icon icon--wa" aria-hidden="true"><use href="#i-whatsapp" /></svg>
+              Abrir en WhatsApp
+            </a>
+            <p class="msg-preview__note">Si puedes, manda también una foto del equipo en el chat.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================== ZONA + PREGUNTAS ============================== -->
+      <section class="section section--alt" id="preguntas" aria-labelledby="faq-title">
+        <div class="container split">
+          <div class="zone">
+            <h2 class="h2">¿Dónde damos servicio?</h2>
+            <!-- CONFIRMAR CON VICTOR la lista de municipios -->
+            <ul class="zone__list">
+              <li><svg class="icon" aria-hidden="true"><use href="#i-pin" /></svg>Monterrey</li>
+              <li><svg class="icon" aria-hidden="true"><use href="#i-pin" /></svg>Guadalupe</li>
+              <li><svg class="icon" aria-hidden="true"><use href="#i-pin" /></svg>San Nicolás</li>
+              <li><svg class="icon" aria-hidden="true"><use href="#i-pin" /></svg>Apodaca</li>
+              <li><svg class="icon" aria-hidden="true"><use href="#i-pin" /></svg>San Pedro</li>
+              <li><svg class="icon" aria-hidden="true"><use href="#i-pin" /></svg>Santa Catarina</li>
+              <li><svg class="icon" aria-hidden="true"><use href="#i-pin" /></svg>Escobedo</li>
+              <li><svg class="icon" aria-hidden="true"><use href="#i-pin" /></svg>Juárez</li>
+            </ul>
+          </div>
+
+          <div>
+            <h2 class="h2 faq__title" id="faq-title">Preguntas frecuentes</h2>
+            <div class="accordion">
+              <details class="accordion__item">
+                <summary class="accordion__summary">¿Cuánto cuesta el servicio?<svg class="icon" aria-hidden="true"><use href="#i-chevron" /></svg></summary>
+                <p class="accordion__panel">Depende del equipo y de lo que necesite. Mándanos por WhatsApp una foto de la etiqueta (marca y modelo) y qué le pasa, y te damos el precio.</p>
+              </details>
+              <details class="accordion__item">
+                <summary class="accordion__summary">¿Cada cuánto le doy mantenimiento a mi minisplit?<svg class="icon" aria-hidden="true"><use href="#i-chevron" /></svg></summary>
+                <p class="accordion__panel">Lo recomendable es al menos una vez al año. El mejor momento es antes del calor, entre febrero y abril. Si lo usas casi diario o hay mucho polvo, cada seis meses.</p>
+              </details>
+              <details class="accordion__item">
+                <summary class="accordion__summary">¿Qué necesito mandar para cotizar?<svg class="icon" aria-hidden="true"><use href="#i-chevron" /></svg></summary>
+                <p class="accordion__panel">Una foto de la etiqueta del equipo, una del aparato y tu colonia. Con eso te decimos qué necesita y cuándo podemos ir.</p>
+              </details>
+              <details class="accordion__item">
+                <summary class="accordion__summary">¿Se ensucia mi casa con el lavado?<svg class="icon" aria-hidden="true"><use href="#i-chevron" /></svg></summary>
+                <p class="accordion__panel">No. Ponemos una cubierta protectora alrededor del equipo para que el agua y la suciedad caigan a una cubeta y no a tu pared o tus muebles.</p>
+              </details>
+              <details class="accordion__item">
+                <summary class="accordion__summary">¿También venden equipos?<svg class="icon" aria-hidden="true"><use href="#i-chevron" /></svg></summary>
+                <p class="accordion__panel">Sí. Te ayudamos a elegir la capacidad correcta para tu espacio y te lo instalamos.</p>
+              </details>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================== CTA FINAL ============================== -->
+      <section class="cta-final" aria-labelledby="cta-final-title">
+        <div class="container cta-final__inner">
+          <h2 class="cta-final__title" id="cta-final-title">Que el calor se quede afuera.</h2>
+          <p class="cta-final__text">Escríbenos por WhatsApp, mándanos una foto de tu equipo y te cotizamos.</p>
+          <a class="btn btn--wa cta-final__action" href="https://wa.me/528119186070" target="_blank" rel="noopener" data-wa="general" data-track="cta_final">
+            <svg class="icon icon--wa" aria-hidden="true"><use href="#i-whatsapp" /></svg>
+            Cotizar por WhatsApp
+          </a>
+          <div class="cta-final__phone">
+            <span class="cta-final__phone-label">O guarda el número:</span>
+            <span class="cta-final__phone-number" id="phone-number" data-phone>81 1918 6070</span>
+            <button type="button" class="cta-final__copy" id="copy-phone">
+              <svg class="icon" aria-hidden="true"><use href="#i-copy" /></svg>
+              <span id="copy-phone-label">Copiar</span>
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ============================== FOOTER ============================== -->
+    <footer class="site-footer">
+      <div class="container site-footer__inner">
+        <div>
+          <a class="brand" href="#inicio" aria-label="Victor - Climatización Monterrey, volver arriba">
+            <span class="brand__mark" aria-hidden="true"><svg><use href="#i-brand" /></svg></span>
+            <span class="brand__name">Victor<span class="brand__sub">Climatización Monterrey</span></span>
+          </a>
+          <p class="site-footer__text">
+            Mantenimiento, reparación, instalación y venta de aires acondicionados y minisplits en Monterrey, Nuevo León.
+          </p>
+        </div>
+
+        <nav class="site-footer__links" aria-label="Redes sociales">
+          <a href="https://www.instagram.com/climat_monterrey/" target="_blank" rel="noopener">Instagram</a>
+          <a href="https://www.facebook.com/profile.php?id=61592615528010" target="_blank" rel="noopener">Facebook</a>
+          <a href="https://wa.me/528119186070" target="_blank" rel="noopener" data-wa="general" data-track="footer">WhatsApp</a>
+        </nav>
+
+        <p class="site-footer__legal">
+          © 2026 Climatización Monterrey · WhatsApp <span class="nowrap" data-phone>81 1918 6070</span>
+        </p>
+      </div>
+    </footer>
+
+    <a class="wa-float" href="https://wa.me/528119186070" target="_blank" rel="noopener" data-wa="general" data-track="boton_flotante" aria-label="Escribir por WhatsApp">
+      <svg class="icon icon--wa" aria-hidden="true"><use href="#i-whatsapp" /></svg>
+    </a>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

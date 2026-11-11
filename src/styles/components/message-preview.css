@@ -1,0 +1,26 @@
+/* Vista previa del mensaje de WhatsApp (sección fallas) */
+.msg-preview {
+  display: grid;
+  gap: 14px;
+  padding: 20px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--white);
+}
+
+.msg-preview__label {
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+.msg-preview__bubble {
+  padding: 12px 14px;
+  border-radius: 12px 12px 4px 12px;
+  background: var(--wa-bubble);
+  line-height: 1.45;
+}
+
+.msg-preview__note {
+  color: var(--ink-2);
+  font-size: 0.88rem;
+}

@@ -1,0 +1,37 @@
+/* Tarjeta con foto arriba (servicios) */
+.card {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--white);
+}
+
+.card__img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.card__body {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 14px;
+  padding: 22px 20px;
+}
+
+.card__title {
+  font-size: 1.45rem;
+}
+
+.card__text {
+  color: var(--ink-2);
+}
+
+/* El botón siempre queda abajo, aunque las tarjetas tengan distinto texto */
+.card__action {
+  margin-top: auto;
+}

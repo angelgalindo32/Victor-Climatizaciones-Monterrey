@@ -1,0 +1,42 @@
+/* Preguntas frecuentes con <details>: abre y cierra sin JavaScript */
+.accordion {
+  display: grid;
+  gap: 10px;
+}
+
+.accordion__item {
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--white);
+}
+
+.accordion__summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  min-height: 60px;
+  padding: 14px 18px;
+  font-weight: 700;
+  line-height: 1.35;
+  list-style: none;
+  cursor: pointer;
+}
+
+.accordion__summary::-webkit-details-marker {
+  display: none;
+}
+
+.accordion__summary .icon {
+  color: var(--ink-2);
+  transition: transform 0.2s ease-out;
+}
+
+.accordion__item[open] .accordion__summary .icon {
+  transform: rotate(180deg);
+}
+
+.accordion__panel {
+  padding: 0 18px 18px;
+  color: var(--ink-2);
+}

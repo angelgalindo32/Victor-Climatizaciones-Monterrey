@@ -1,0 +1,81 @@
+.site-header {
+  background: var(--white);
+  border-bottom: 1px solid var(--line);
+}
+
+.site-header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  min-height: 68px;
+}
+
+/* Menú: solo en compu */
+.site-nav {
+  display: none;
+  gap: 4px;
+}
+
+.site-nav a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 0 12px;
+  border-radius: 8px;
+  color: var(--ink-2);
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.site-nav a:hover {
+  background: var(--bg-alt);
+  color: var(--ink);
+}
+
+@media (min-width: 980px) {
+  .site-nav {
+    display: flex;
+  }
+}
+
+/* Botón de WhatsApp del header: "WhatsApp" en celular, el número completo en pantallas más anchas */
+.header-wa {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 44px;
+  padding: 0 14px;
+  border-radius: var(--radius-sm);
+  background: var(--wa);
+  color: var(--wa-ink);
+  font-size: 0.95rem;
+  font-weight: 700;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background-color 0.2s ease-out;
+}
+
+.header-wa:hover {
+  background: var(--wa-hover);
+}
+
+.header-wa .icon--wa {
+  width: 20px;
+  height: 20px;
+}
+
+.header-wa__number {
+  display: none;
+}
+
+@media (min-width: 600px) {
+  .header-wa__number {
+    display: inline;
+  }
+
+  .header-wa__label {
+    display: none;
+  }
+}

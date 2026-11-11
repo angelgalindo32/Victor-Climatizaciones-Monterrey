@@ -1,0 +1,38 @@
+.section {
+  padding-block: var(--section-space);
+}
+
+.section--alt {
+  background: var(--bg-alt);
+}
+
+/* Título + texto de entrada de cada sección */
+.section-head {
+  display: grid;
+  gap: 12px;
+  max-width: 680px;
+  margin-bottom: clamp(28px, 4vw, 44px);
+}
+
+.section-head--tight {
+  margin-bottom: 24px;
+}
+
+.section-head__text {
+  color: var(--ink-2);
+  font-size: clamp(1rem, 0.96rem + 0.2vw, 1.1rem);
+}
+
+/* Dos columnas en compu (fallas, zona + preguntas) */
+.split {
+  display: grid;
+  gap: 32px;
+}
+
+@media (min-width: 900px) {
+  .split {
+    grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+    gap: 56px;
+    align-items: start;
+  }
+}

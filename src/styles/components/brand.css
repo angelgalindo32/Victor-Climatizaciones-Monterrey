@@ -1,0 +1,52 @@
+/*
+ * Logo PROVISIONAL (ícono de aire + nombre).
+ * Cuando esté el logo nuevo: cambia el <span class="brand__mark"> del HTML por
+ * <img class="brand__logo" src="./src/assets/img/brand/logo.svg" alt="Climatización Monterrey">
+ */
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 44px;
+  text-decoration: none;
+}
+
+.brand__mark {
+  display: grid;
+  flex: none;
+  place-items: center;
+  width: 38px;
+  height: 38px;
+  border-radius: var(--radius-sm);
+  background: var(--brand);
+  color: var(--white);
+}
+
+.brand__mark svg {
+  width: 22px;
+  height: 22px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.9;
+  stroke-linecap: round;
+}
+
+.brand__logo {
+  width: auto;
+  height: 44px;
+}
+
+.brand__name {
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.01em;
+}
+
+.brand__sub {
+  display: block;
+  color: var(--ink-2);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0;
+}

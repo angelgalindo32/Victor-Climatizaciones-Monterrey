@@ -1,0 +1,117 @@
+/* Calculadora de toneladas: datos a la izquierda, resultado a la derecha (en compu) */
+.calc {
+  display: grid;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--white);
+}
+
+.calc__inputs {
+  display: grid;
+  gap: 22px;
+  padding: 24px 20px;
+}
+
+.calc__result {
+  display: grid;
+  gap: 14px;
+  padding: 24px 20px;
+  background: var(--brand-soft);
+}
+
+/* Campo del tamaño del cuarto */
+.calc__field-top {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.calc__field-label {
+  font-weight: 700;
+}
+
+.calc__field-value {
+  font-size: 1.4rem;
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+}
+
+.calc__field-help {
+  color: var(--ink-2);
+  font-size: 0.9rem;
+}
+
+/* Resultado */
+.calc__label {
+  color: var(--ink-2);
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+.calc__tons {
+  color: var(--brand);
+  font-size: clamp(2.6rem, 2.2rem + 2vw, 3.6rem);
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: -0.03em;
+  font-variant-numeric: tabular-nums;
+}
+
+.calc__tons small {
+  margin-left: 6px;
+  font-size: 0.42em;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+
+.calc__btu {
+  color: var(--ink-2);
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
+
+.calc__scale {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 6px;
+}
+
+.calc__scale li {
+  display: grid;
+  place-items: center;
+  height: 36px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--white);
+  color: var(--ink-2);
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.calc__scale li.is-active {
+  border-color: var(--brand);
+  background: var(--brand);
+  color: var(--white);
+}
+
+.calc__note {
+  color: var(--ink-2);
+  font-size: 0.9rem;
+}
+
+@media (min-width: 900px) {
+  .calc {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .calc__inputs,
+  .calc__result {
+    padding: 36px;
+  }
+
+  .calc__result {
+    align-content: center;
+  }
+}

@@ -1,0 +1,11 @@
+/* Tres tarjetas: una columna en celular, tres en compu */
+.services {
+  display: grid;
+  gap: 18px;
+}
+
+@media (min-width: 900px) {
+  .services {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}

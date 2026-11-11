@@ -1,0 +1,21 @@
+/* Lista con palomitas azules */
+.check-list {
+  display: grid;
+  gap: 8px;
+}
+
+.check-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 0.97rem;
+  line-height: 1.45;
+}
+
+.check-list .icon {
+  width: 18px;
+  height: 18px;
+  margin-top: 3px;
+  color: var(--brand);
+  stroke-width: 2.2;
+}
